@@ -45,19 +45,6 @@ public class Tower : MonoBehaviour
 
         fireCountdown -= Time.deltaTime;
     }
-
-    void Shoot()
-    {
-        GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
-        /*Bullet bulletScript = bullet.GetComponent<Bullet>();
-
-        if (bulletScript != null)
-        {
-            bulletScript.SetTarget(target);
-        }*/
-
-    }
-
     void UpdateTarget()
     {
         GameObject[] enemies = GameObject.FindGameObjectsWithTag(enemyTag);
@@ -88,6 +75,17 @@ public class Tower : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, range);
+    }
+    void Shoot()
+    {
+        GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        Bullet bulletScript = bullet.GetComponent<Bullet>();
+
+        if (bulletScript != null)
+        {
+            bulletScript.SetTarget(target);
+        }
+
     }
 }  
 
