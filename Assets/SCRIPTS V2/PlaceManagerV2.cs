@@ -10,8 +10,8 @@ public class PlaceManagerV2 : MonoBehaviour
 
     public int selectedTowerPrice;
     private int scoutPrice = 75;
-    private int soldierPrice = 125;
-    private int sniperPrice = 150;
+    private int soldierPrice = 100;
+    private int sniperPrice = 125;
 
     [SerializeField] private Player player;
 
