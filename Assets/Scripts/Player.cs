@@ -7,9 +7,11 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
-    public int coins;
+    [SerializeField] public int coins;
     private int Health = 3;
     [SerializeField] TextMeshProUGUI textHeath;
+    [SerializeField] TextMeshProUGUI cooin;
+
     public Sprite heartSprite;
     public Transform heartsContainer;
     public Vector2 initialPosition = new Vector2(0, 0);  // Початкова позиція
@@ -17,9 +19,17 @@ public class Player : MonoBehaviour
     private void Start()
     {
         UpdateUI();
+        
         coins = 225;
     }
-    
+
+
+    private void Update()
+    {
+        cooin.text = $"Coins: {coins.ToString()}";
+    }
+
+
     public void TakeDamage()
     {
         Health--;

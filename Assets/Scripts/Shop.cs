@@ -21,6 +21,8 @@ public class Shop : MonoBehaviour
         scoutPrice.text = ScoutPrice.ToString();
         soldierPrice.text = SoldierPrice.ToString();
         sniperPrice.text = SniperPrice.ToString();
+
+        print($"{player.coins}");
     }
 
     public void PurchaseScout()
@@ -29,6 +31,8 @@ public class Shop : MonoBehaviour
         {
             BuildManager.instance.SetTowerToBuild(BuildManager.instance.Scout);
             player.coins =- ScoutPrice;
+
+            print("Scout");
         }
     }
 
@@ -38,6 +42,8 @@ public class Shop : MonoBehaviour
         {
             BuildManager.instance.SetTowerToBuild(BuildManager.instance.Soldier);
             player.coins =- SoldierPrice;
+            print("Sniper");
+
         }
     }
     public void PurchaseSniper()
@@ -46,6 +52,8 @@ public class Shop : MonoBehaviour
         {
             BuildManager.instance.SetTowerToBuild(BuildManager.instance.Sniper);
             player.coins =- SniperPrice;
+            print("Sniper");
+
         }
     }
 }

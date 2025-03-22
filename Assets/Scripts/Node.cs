@@ -10,6 +10,7 @@ public class Node : MonoBehaviour
     [SerializeField] private Color normalColor;
     [SerializeField] private Material nodeMaterial;
     [SerializeField] private GameObject tower;
+    
 
     private void Start()
     {

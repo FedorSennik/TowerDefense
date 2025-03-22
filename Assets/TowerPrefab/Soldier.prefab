@@ -219,6 +219,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1031567901228012626}
+  - component: {fileID: 7437625082552718954}
   m_Layer: 0
   m_Name: Soldier
   m_TagString: Untagged
@@ -244,6 +245,20 @@ Transform:
   - {fileID: 7605185966795169480}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7437625082552718954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4685811884843335731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83dc2e847376dfd47a3edf5ca9102e94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  towerData: {fileID: 11400000, guid: 9e15e88a60188ac4d91e99e8d5792ccc, type: 2}
+  rotateSpeed: 10
 --- !u!1 &8879349200942012429
 GameObject:
   m_ObjectHideFlags: 0

@@ -9,10 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be357d9a34eb91645bd93126141327f9, type: 3}
-  m_Name: New Enemy
+  m_Script: {fileID: 11500000, guid: 85a8d8af7e89e1145a3830548d6142eb, type: 3}
+  m_Name: SniperDATA
   m_EditorClassIdentifier: 
-  _health: 0
-  _speed: 0
-  _worth: 0
-  _model: {fileID: 0}
+  range: 10
+  kd: 2
+  bulletPrefab: {fileID: 4529561538363364444, guid: 4bd884c78dba9d84881814302be9fe3a,
+    type: 3}

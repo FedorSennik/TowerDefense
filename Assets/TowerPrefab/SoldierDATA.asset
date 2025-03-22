@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85a8d8af7e89e1145a3830548d6142eb, type: 3}
+  m_Name: SoldierDATA
+  m_EditorClassIdentifier: 
+  range: 5
+  kd: 1
+  bulletPrefab: {fileID: 4529561538363364444, guid: 4bd884c78dba9d84881814302be9fe3a,
+    type: 3}
